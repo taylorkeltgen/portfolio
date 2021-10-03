@@ -19,7 +19,6 @@ body {
 /* HEADER SECTION */
 header {
     background-color: #333;
-    /* padding: 20px 35px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -71,10 +70,9 @@ header nav ul li a {
     border-right: solid black;
     padding: 100px 45px;
     display: flex;
-    flex: 2;
 }
-#about-me div h2 {
-    
+#about-me .title {
+    margin-left: 40px;
 }
 .container-info {
     display: flex;
@@ -95,32 +93,43 @@ header nav ul li a {
 }
 
 /* MY WORK SECTION */
+#my-work .title {
+    margin-right: 40px;
+    margin-left: 55px;
+}
 #my-work div {
     flex-wrap: wrap;
     display: flex;
 }
 
-.work-info {
-    padding: 20px;
-    margin: 20px;
-}
-
-.project {
-    border: 4px solid var(--pink);
-    display: flex;
-    flex: 1;
+.work-info div {
+    margin: 5px;
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-position: center center;
 }
-.project div {
+.work-info a {
     background-color: var(--pink);
     flex-flow: column;
     position: relative;
-    right: 200px;
-    top: 100px;
     padding: 10px;
     flex-wrap: wrap;
+}
+.project-main {
+    border: 5px solid var(--pink);
+    flex: 100%;
+}
+.project-main a {
+    right: 410px;
+    top: 100px;
+}
+.project-secondary {
+    border: 5px solid var(--pink);
+    flex: 1;
+}
+.project-secondary a {
+    right: 210px;
+    top: 100px;
 }
 .first-project {
     background-image: url(../images/img-1.jpeg);
@@ -172,7 +181,12 @@ footer nav ul li a {
 a:hover, a:active {
     color: var(--hilite);
 }
-.project:hover {
+.project-main:hover, .project-secondary:hover {
     background-color: var(--hilite);
     color: var(--hilite);
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 980px) {
+
 }
