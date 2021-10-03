@@ -1,3 +1,9 @@
+:root {
+    --pink: #C71585;
+    --black: black;
+    --hilite: rgb(255, 196, 0);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +12,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #3f3f3f;
+    color: var(--black);
+
 }
 
 /* HEADER SECTION */
 header {
-    background-color: #3f3f3f;
+    background-color: #333;
     /* padding: 20px 35px; */
     display: flex;
     justify-content: space-between;
@@ -19,8 +26,8 @@ header {
     align-items: center;
 }
 header h1 {
-    background-color: #C71585;
-    color: #3f3f3f;
+    background-color: var(--pink);
+    color: var(--black);
     margin: 0;
     padding: 10px 10px 10px 40px;
 }
@@ -41,7 +48,7 @@ header nav ul li a {
     padding: 10px 20px;
     font-weight: lighter;
     font-size: 1.55vw;
-    color:#C71585;
+    color: var(--pink);
 }
 
 /* HERO BANNER */
@@ -49,7 +56,7 @@ header nav ul li a {
     background-image: url("../images/bg-hero.png");
     background-size: cover;
     padding: 10%;
-    color:#C71585;
+    color:var(--pink);
 }
 
 /* ABOUT ME SECTION */
@@ -64,6 +71,7 @@ header nav ul li a {
     border-right: solid black;
     padding: 100px 45px;
     display: flex;
+    flex: 2;
 }
 #about-me div h2 {
     
@@ -86,12 +94,59 @@ header nav ul li a {
     height: auto;
 }
 
+/* MY WORK SECTION */
+#my-work div {
+    flex-wrap: wrap;
+    display: flex;
+}
 
+.work-info {
+    padding: 20px;
+    margin: 20px;
+}
 
-/* FOOTER SECTION */
-footer{
+.project {
+    border: 4px solid var(--pink);
+    display: flex;
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
+.project div {
+    background-color: var(--pink);
+    flex-flow: column;
+    position: relative;
+    right: 200px;
+    top: 100px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.first-project {
+    background-image: url(../images/img-1.jpeg);
+    padding: 200px 400px;
+}
+.first-project div {
+    right: 400px;
+}
+.second-project {
+    background-image: url(../images/img-2.jpeg);
+    padding: 150px 200px;
+}
+.third-project {
+    background-image: url(../images/img-3.jpeg);
+    padding: 150px 200px;
+}
+.fourth-project {
+    background-image: url(../images/img-4.jpeg);
+    padding: 150px 200px;
+}
+.fifth-project {
+    background-image: url(../images/img-5.jpeg);
+    padding: 150px 200px;
+}
+
+/* FOOTER SECTION */
 footer a {
     text-decoration: none;
 }
@@ -103,12 +158,21 @@ footer nav {
 footer nav ul {
     display: flex;
     flex-wrap: wrap;
-    
     list-style: none;
 }
 footer nav ul li a {
-    padding: 10px 20px;
-    /* font-weight: lighter; */
+    padding: 10px 30px;
     font-size: 1.55vw;
+    color: var(--black);
+}
+.contacts {
+}
 
+/* EFFECTS */
+a:hover, a:active {
+    color: var(--hilite);
+}
+.project:hover {
+    background-color: var(--hilite);
+    color: var(--hilite);
 }
