@@ -56,6 +56,7 @@ header nav ul li a {
     background-size: cover;
     padding: 10%;
     color:var(--pink);
+    font-size: 48px;
 }
 
 /* ABOUT ME SECTION */
@@ -65,7 +66,7 @@ header nav ul li a {
     align-items: center;
 }
 .title {
-    font-size: 46px; 
+    font-size: 32px; 
     text-align: right;
     border-right: solid black;
     padding: 100px 45px;
@@ -129,6 +130,7 @@ header nav ul li a {
     right: 410px;
     top: 75px;
     text-decoration: none;
+    color: var(--black);
 }
 .project-secondary {
     border: 5px solid var(--pink);
@@ -139,6 +141,7 @@ header nav ul li a {
     right: 210px;
     top: 30px;
     text-decoration: none;
+    color: var(--black);
 }
 .first-project {
     background-image: url(../images/img-1.jpeg);
@@ -196,6 +199,7 @@ a:hover, a:active {
         border-bottom: solid black;
         border-right: none;
         padding: 0;
+        margin-top: 20px;
         text-align: center;
         flex-wrap: nowrap;
     }
