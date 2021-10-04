@@ -101,7 +101,12 @@ header nav ul li a {
     flex-wrap: wrap;
     display: flex;
 }
-
+.work-info {
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
 .work-info div {
     margin: 5px;
     background-size: cover;
@@ -118,41 +123,40 @@ header nav ul li a {
 .project-main {
     border: 5px solid var(--pink);
     flex: 100%;
+    padding: 100px 400px;
 }
 .project-main a {
     right: 410px;
-    top: 100px;
+    top: 75px;
+    text-decoration: none;
 }
 .project-secondary {
     border: 5px solid var(--pink);
     flex: 1;
+    padding: 50px 200px;
 }
 .project-secondary a {
     right: 210px;
-    top: 100px;
+    top: 30px;
+    text-decoration: none;
 }
 .first-project {
     background-image: url(../images/img-1.jpeg);
-    padding: 200px 400px;
 }
 .first-project div {
     right: 400px;
 }
 .second-project {
     background-image: url(../images/img-2.jpeg);
-    padding: 150px 200px;
 }
 .third-project {
     background-image: url(../images/img-3.jpeg);
-    padding: 150px 200px;
 }
 .fourth-project {
     background-image: url(../images/img-4.jpeg);
-    padding: 150px 200px;
 }
 .fifth-project {
     background-image: url(../images/img-5.jpeg);
-    padding: 150px 200px;
 }
 
 /* FOOTER SECTION */
@@ -188,5 +192,28 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 980px) {
-
+    .title {
+        border-bottom: solid black;
+        border-right: none;
+        padding: 0;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+    .container {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-main {
+        padding: 100px 200px;
+    }
+    .project-secondary {
+        padding: 50px 100px;
+    }
+    .work-info a {
+        right: 110px;
+    }
+    .project-main a {
+        right: 210px;
+    }
 }
