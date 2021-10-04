@@ -17,10 +17,12 @@
 * WHEN I resize the page or view the site on various screens and devices
 * THEN I am presented with a responsive layout that adapts to my viewport
 
-## Website:
-[insert link]
+## Website: 
+* https://taylorkeltgen.github.io/portfolio/
+
 
 ## Screenshot:
+[Screen Shot](https://user-images.githubusercontent.com/88693758/135781498-21e64c94-6940-4ec7-8381-f8dbb26e20c5.png)
 
 ## Contribution:
 ### Made by Taylor Keltgen
