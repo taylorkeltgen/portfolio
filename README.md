@@ -22,7 +22,7 @@
 
 
 ## Screenshot:
-[Screen Shot](https://user-images.githubusercontent.com/88693758/135781498-21e64c94-6940-4ec7-8381-f8dbb26e20c5.png)
+![Screen Shot](https://user-images.githubusercontent.com/88693758/135781498-21e64c94-6940-4ec7-8381-f8dbb26e20c5.png)
 
 ## Contribution:
 ### Made by Taylor Keltgen
